@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleep Tracker</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: rgb(110, 110, 181);
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="number"], input[type="date"], input[type="time"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>Sleep Tracker</h2>
+    <form action="submit_sleep.php" method="post">
+        <label for="child_id">Child ID:</label>
+        <input type="text" id="child_id" name="child_id" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="nap_start">Nap Start Time:</label>
+        <input type="time" id="nap_start" name="nap_start" required>
+
+        <label for="nap_end">Nap End Time:</label>
+        <input type="time" id="nap_end" name="nap_end" required>
+
+        <label for="nighttime_start">Nighttime Sleep Start Time:</label>
+        <input type="time" id="nighttime_start" name="nighttime_start" required>
+
+        <label for="nighttime_end">Nighttime Sleep End Time:</label>
+        <input type="time" id="nighttime_end" name="nighttime_end" required>
+
+        <input type="submit" value="Submit">
+    </form>
+    <div class="social-media">
+        <h3>Connect with Us on Social Media</h3>
+        <div class="social-icons">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="instagram.png.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="facebook.png.png" alt="Facebook">
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+                <img src="linkedln.png.png" alt="LinkedIn">
+            </a>
+        </div>
+        <p>&copy; 2023 AIshopper.com. All rights reserved.</p>
+</footer>
+</body>
+</html>
